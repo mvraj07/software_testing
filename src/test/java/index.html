@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Page</title>
+</head>
+<body>
+
+<h1>Hi!!</h1>
+
+<p>Hello</p>
+
+<br><br>
+
+<form>
+    <label for="text">Enter your Text:</label>
+    <input type="text" id="text1" name="text">
+
+    <br>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <br><br>
+
+    <input type="file" id="file" name="file">
+
+    <button type="submit">Submit</button>
+
+    <br><br>
+
+    <button type="button" onclick="alert('Alert!!')">Alert!!</button>
+    <button type="button" onclick="confirm('Are you sure?')">Confirm</button>
+    <button type="button" onclick="prompt('Enter something:')">Prompt</button>
+
+    <br><br>
+
+    <button type="button" onclick="window.open('https://example.com', '_blank')">PopUp</button>
+
+    <br><br>
+
+    <button type="button" onclick="setTimeout(() => alert('Delay completed!'), 2000)">
+        Delay
+    </button>
+
+    <br><br>
+
+    <iframe
+            srcdoc='
+                <!DOCTYPE html>
+                <html>
+                <body>
+                    <h1>Hi!!</h1>
+                      <p>Hello</p>
+
+                    <br><br>
+
+                    <label>Enter your Text:</label>
+                    <input type="text" id="text2">
+
+                    <br>
+
+                    <input type="radio" name="iframeGender">Male
+                    <input type="radio" name="iframeGender">Female
+
+                    <br><br>
+
+                    <input type="file">
+                    <button>Submit</button>
+
+                    <br><br>
+
+                    <button onclick="alert(&quot;Alert!!&quot;)">Alert!!</button>
+                    <button onclick="confirm(&quot;Are you sure?&quot;)">Confirm</button>
+                    <button onclick="prompt(&quot;Enter something:&quot;)">Prompt</button>
+
+                    <br><br>
+
+                    <button>PopUp</button>
+
+                    <br><br>
+
+                    <button>Delay</button>
+                </body>
+                </html>
+            '
+            width="625"
+            height="375"
+            title="Practice iframe">
+    </iframe>
+
+    <br><br>
+
+    <input type="checkbox" id="agreement" name="agreement">
+    <label for="agreement">I Accept the agreement</label>
+</form>
+
+</body>
+</html>
